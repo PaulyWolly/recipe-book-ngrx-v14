@@ -1,6 +1,6 @@
-# Recipe Book with NgRx
+# Recipe Book with NgRx v14
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.10.
 
 ## Development server
 
@@ -27,4 +27,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # recipe-book-ngrx
 # recipe-book-ngrx-v14
-# recipe-book-ngrx-v14
+
