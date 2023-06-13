@@ -1,5 +1,5 @@
 import { AfterContentInit, Component, OnInit } from '@angular/core';
-import * as RecipeActions from '../recipes/store/recipe.actions';
+import * as RecipeActions from './store/recipe.actions';
 import { Store } from '@ngrx/store';
 import * as fromApp from '../store/app.reducer';
 
@@ -14,7 +14,7 @@ export class RecipesComponent implements OnInit, AfterContentInit {
 
   ngOnInit() {
     // load/fetch recipes when Recipe page opens
-    this.store.dispatch(new RecipeActions.FetchRecipes());
+    this.store.dispatch(RecipeActions.fetchRecipes());
   }
 
   // Use this life-cycle hook to make content go to top

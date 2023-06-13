@@ -99,7 +99,7 @@ export class AuthComponent implements OnInit, AfterViewInit, OnDestroy, AfterCon
   }
 
   autoFetchRecipes() {
-    this.store.dispatch(new RecipesActions.FetchRecipes());
+    this.store.dispatch(RecipesActions.fetchRecipes());
   }
 
   private showErrorAlert(message: string) {
