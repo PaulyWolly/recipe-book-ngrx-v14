@@ -63,7 +63,7 @@ export class RecipeDetailComponent implements OnInit {
   }
 
   onPushToDB() {
-    this.store.dispatch(new RecipeActions.StoreRecipes());
+    this.store.dispatch(RecipeActions.storeRecipes());
   }
 
   onDeleteRecipe() {
@@ -71,7 +71,7 @@ export class RecipeDetailComponent implements OnInit {
     const response = confirm('Are you sure you want to delete?');
     if (response) {
       // this.recipeService.deleteRecipe(this.id);
-      this.store.dispatch(new RecipeActions.DeleteRecipe(this.id));
+      this.store.dispatch(RecipeActions.deleteRecipe({ index: this.id }));
       this.router.navigate(['/recipes']);
 
       // push changes to DB
